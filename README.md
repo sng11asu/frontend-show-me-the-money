@@ -1,7 +1,7 @@
 # React + TypeScript + Vite
 
-To run the app run following commands:
+To run the app run the following commands:
 
-```npm install```
-```npm run build```
-```npm run preview```
+```npm install``` <br>
+```npm run build``` <br>
+```npm run preview``` <br>
