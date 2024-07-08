@@ -1,18 +1,13 @@
 import {render} from '@testing-library/react';
 import axios from 'axios';
-import MockAdapter from 'axios-mock-adapter';
 import {MoneyTable} from './MoneyTable';
 import {RowType} from '../../types/types';
 import {describe, it, expect, beforeEach, vi} from 'vitest';
 vi.mock('axios');
 const mock = axios as jest.Mocked<typeof axios>;
 
-// const mock = new MockAdapter(axios);
-
 describe('MoneyTable', () => {
-  beforeEach(() => {
-    // mock.reset();
-  });
+  beforeEach(() => {});
 
   it('renders report name and date', async () => {
     const mockData = {
@@ -39,8 +34,6 @@ describe('MoneyTable', () => {
       ],
     };
     mock.get.mockResolvedValue({data: mockData});
-
-    // mock.onGet('http://127.0.0.1:3100/api/data').reply(200, mockData);
 
     const {findByText} = render(<MoneyTable />);
 
