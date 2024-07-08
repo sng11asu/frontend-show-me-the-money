@@ -1,0 +1,22 @@
+.d-flex{
+    display: flex;
+}
+p{
+    margin-right: 15px;
+}
+table, td, tr, th{
+    border: 1px solid blue;
+}
+tr{
+    height: 30px;
+}
+th{
+    color: red;
+    width: '*';
+}
+.row{
+    color: aqua;
+}
+.summary-row{
+    color: green;
+}

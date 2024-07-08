@@ -1,14 +1,11 @@
-import {useState} from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
+import {MoneyTable} from './components/MoneyTable/MoneyTable';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <h1>Show me the money!</h1>
+      <MoneyTable />
     </>
   );
 }
